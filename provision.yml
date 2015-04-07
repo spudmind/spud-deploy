@@ -47,7 +47,10 @@
   #   copy: src=files/ssl/dhparam.pem dest={{ project_root }}/home/ssl/dhparam.pem
 
   - name: Change permissions.
-    shell: chown -R {{ project_name }}:{{ project_name }} {{ project_root }}
+    shell: "chown -R {{ project_name }}:{{ project_name }} {{ project_root }}"
+
+  - name: Remove unwanted nginx sites
+    shell: "cd /etc/nginx/sites-enabled/ && ls | grep -v {{ project_name }} | xargs rm"
 
   - name: Install nginx configuration file.
     template: src=files/conf/nginx.conf dest=/etc/nginx/sites-enabled/{{ project_name }}
