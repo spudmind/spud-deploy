@@ -11,6 +11,7 @@
 
   - name: Create user.
     user: home={{ project_root }}/home/ name={{ project_name }} state=present
+    ignore_errors: yes
 
   - name: Update the project directory.
     file: group={{ project_name }} owner={{ project_name }} mode=755 state=directory path={{ project_root }}
