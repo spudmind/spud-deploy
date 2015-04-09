@@ -6,7 +6,13 @@ Ansible playbook for deploying Under The Influence.
 
  * [Install ansible](http://docs.ansible.com/intro_installation.html) on your computer
  * Add your ssh key to `~/.ssh/authorized_keys` on the UTI server
- * Add the UTI server to your local `~/.ssh/config`, with hostname “uti”
+ * Add the UTI server to your local `~/.ssh/config`:
+
+   ```
+   host uti
+   HostName 23.253.53.36
+   User root
+   ```
 
 ## Provisioning and Deploying
 
