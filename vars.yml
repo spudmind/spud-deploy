@@ -13,6 +13,7 @@ system_packages:
   - libxslt1-dev
   - nginx
   - postfix
+  - python3.4-venv
   - python-dev
   - python-numpy
   - python-psycopg2

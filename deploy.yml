@@ -18,7 +18,7 @@
       - restart nginx
 
   - name: Upgrade the virtualenv.
-    pip: requirements={{ project_root }}/code/requirements.txt virtualenv={{ project_root }}/env/ extra_args='-U'
+    pip: requirements={{ project_root }}/code/requirements.txt virtualenv={{ project_root }}/env/ extra_args='-U' virtualenv_command='pyvenv-3.4'
 
   handlers:
     - include: handlers.yml
