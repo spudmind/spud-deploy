@@ -2,7 +2,7 @@
 project_name: undertheinfluence
 project_root: /var/www/undertheinfluence
 app_name: undertheinfluence
-project_repo: https://github.com/spudmind/undertheinfluence.git
+project_repo: https://github.com/andylolz/undertheinfluence.git
 alias_domains: ["undertheinfluence.org.uk"]
 system_packages:
   - build-essential
