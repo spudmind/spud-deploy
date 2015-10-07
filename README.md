@@ -9,7 +9,7 @@ Ansible playbook for deploying Under The Influence.
  * Add the UTI server to your local `~/.ssh/config`:
 
    ```
-   host uti
+   host uti-root
    HostName 23.253.53.36
    User root
    ```

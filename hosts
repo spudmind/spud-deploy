@@ -5,4 +5,4 @@ production
 production
 
 [production]
-uti nickname=production vm=0 branch=master domain=www.undertheinfluence.org.uk
+uti-root nickname=production vm=0 branch=master domain=www.undertheinfluence.org.uk
